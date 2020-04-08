@@ -18,18 +18,16 @@ printf("donner la valeur de b=");
 scanf("%f",&b);
 printf("donner la valeur de c=");
 scanf("%f",&c);
-   if (a==0,b==0){
+
+if (a==0,b==0){
     printf("l'inconnue n'existe pas dans l'equation");
     return 0;
 }
-
-
 if (a==0){
     printf ("l'equation admet unique solution:%f",c/b);
+    return 0;
 }
-
-else{
- delta=b*b-4*a*c ;
+delta=b*b-4*a*c ;
  
  if (delta==0.0){
      X=-b/(2*a) ;
@@ -42,6 +40,7 @@ else{
      X1=(-b+sqrt(delta))/(2*a);
      X2=(-b-sqrt(delta))/(2*a);
      printf("l'equation admet deux solutions:X1=\n\tX2= %f,%f",X1,X2);
- }}
+ }
+
     return 0;
 }
